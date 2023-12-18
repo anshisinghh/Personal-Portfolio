@@ -199,19 +199,19 @@ nav a:hover {
     transition: background-color 0.3s ease;
     font-size: 1.5em;
 }
-#mail:hover {
+.mail:hover {
     background-color: var(--mail-color, #1ebcff);
 }
-#phone:hover {
+.phone:hover {
     background-color: var(--phone-color, #04b309);
 }
-#linkedin:hover {
+.linkedin:hover {
     background-color: var(--linkedin-color, darkblue);
 }
-#github:hover {
+.github:hover {
     background-color: var(--github-color, rgb(43, 43, 43));
 }
-#pdf:hover {
+.pdf:hover {
     background-color: var(--pdf-color, #f40f02);
 }
 @media (max-width: 767px) {
