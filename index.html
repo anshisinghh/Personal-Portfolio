@@ -30,17 +30,44 @@
                 <h2>Hi, I'm Anshi,</h2>
                 <p>I am a Computer Science student at UC San Diego, with an expected graduation date of June 2025. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have industry level internship experience as a student consultant who worked on a project on blockchain technology. <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
                 <p>I am sharing my educational and programming journey. Connect with me!</p>
-                <ul class="contact-buttons">
-                    <li><a href="mailto:anshisingh730@gmail.com" id="mail" class="contact-button"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="tel:+19493534274" id="phone" class="contact-button"><i class="fa-solid fa-phone"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/anshisingh/" id="linkedin" class="contact-button" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/anshisinghh" id="github" class="contact-button" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="Anshi_Singh_Resume.pdf" id="pdf" class="contact-button" download><i class="fa-solid fa-file-pdf"></i></a></li>
-                </ul>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        document.querySelector('.contact-buttons-no-js').style.display = 'none';
+                        document.querySelector('.contact-buttons-js').style.display = 'flex';
+                    });
+                </script>
+                <noscript>
+                    <style>
+                        .contact-buttons-no-js {
+                            display: flex !important;
+                        }
+
+                        .contact-buttons-js {
+                            display: none !important;
+                        }
+                    </style>
+                </noscript>
+
+                <!-- WITH JS -->
+                <ul class="contact-buttons-js">
+                    <li><a href="mailto:anshisingh730@gmail.com" id="mail" class="contact-button" title="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="tel:+19493534274" id="phone" class="contact-button" title="Phone Number"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/anshisingh/" id="linkedin" class="contact-button" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/anshisinghh" id="github" class="contact-button" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="Anshi_Singh_Resume.pdf" id="pdf" class="contact-button" download title="Download PDF Resume"><i class="fa-solid fa-file-pdf"></i></a></li>
+                </ul>  
+                <!-- WITHOUT JS -->
+                <ul class="contact-buttons-no-js">
+                    <li><a href="mailto:anshisingh730@gmail.com" id="mail" class="contact-button" title="Email">✉️</a></li>
+                    <li><a href="tel:+19493534274" id="phone" class="contact-button" title="Phone Number">📞</a></li>
+                    <li><a href="https://www.linkedin.com/in/anshisingh/" id="linkedin" class="contact-button" target="_blank" title="LinkedIn">🔗</a></li>
+                    <li><a href="https://github.com/anshisinghh" id="github" class="contact-button" target="_blank" title="GitHub">🐙</a></li>
+                    <li><a href="Anshi_Singh_Resume.pdf" id="pdf" class="contact-button" download title="Download PDF Resume">📄</a></li>
+                </ul>        
             </section>
             <section id="get-in-touch-container">
                 <h2>Get In Touch</h2>
-                <form id="contact-form" action="https://httpbin.org/post" method="POST">
+                <form id="contact-form" action="https://formspree.io/f/mjvnbyrw" method="POST">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required placeholder="John Doe" minlength="2" maxlength="100">
                     <output id="nameError"></output>
@@ -207,9 +234,6 @@
         </main>
         <footer>
             <button class="dark-light-toggle" style="display: none;">&#127771;</button>
-            <noscript>
-                <p>Dark mode only available with JavaScript.</p>
-            </noscript>
             <p class="footer-design">Made by Anshi</p>
             <p>Contact Me: <a href="mailto:anshisingh730@gmail.com" class="footeremail"><i>anshisingh730@gmail.com</i></a></p>
             <script>

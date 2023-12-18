@@ -165,7 +165,7 @@ nav a:hover {
 }
 
 /* Contact */
-.contact-buttons {
+.contact-buttons-js, .contact-buttons-no-js {
     display: flex;
     justify-content: space-around;
     margin-top: 2em;
