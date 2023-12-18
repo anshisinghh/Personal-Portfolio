@@ -60,7 +60,10 @@ footer p {
     border-radius: 10%;
     transition: background-color 0.3s ease;
     border: none;
-    padding: 0.2em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     cursor: pointer;
 }
 .dark-light-toggle:hover {
@@ -185,7 +188,10 @@ nav a:hover {
     padding: 1em;
 }
 .contact-button {
-    padding: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
     background-color: var(--light-content-background-color, green);
     color: var(--button-text-color, white);
     text-decoration: none;
@@ -448,7 +454,7 @@ output {
     margin: 0 auto;
     width: 90%;
 }
-.project-buttons {
+.project-buttons-js, .project-buttons-no-js {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -466,7 +472,6 @@ output {
     font-size: 1.5em;
     margin-right: 0.5em;
     margin-left: 0.5em;
-    border: 1px solid var(--light-border-color, white);
     display: flex;
     justify-content: space-around;
 }

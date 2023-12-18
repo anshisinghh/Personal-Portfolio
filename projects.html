@@ -26,10 +26,17 @@
             <section class="projects-container">
                 <article class="project">
                     <h3>Twitter, Parstagram, and Flix App</h3>
-                    <section class="project-buttons">
-                        <a href="https://github.com/anshisinghh/Twitter" class="project-button" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://github.com/anshisinghh/Instagram" class="project-button" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://github.com/anshisinghh/Flix" class="project-button" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <!-- WITH JS -->
+                    <section class="project-buttons-js">
+                        <a href="https://github.com/anshisinghh/Twitter" class="project-button" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/anshisinghh/Instagram" class="project-button" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/anshisinghh/Flix" class="project-button" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </section>
+                    <!-- WITHOUT JS -->
+                    <section class="project-buttons-no-js" style="display: none">
+                        <a href="https://github.com/anshisinghh/Twitter" class="project-button" target="_blank" title="GitHub">🐙</a>
+                        <a href="https://github.com/anshisinghh/Instagram" class="project-button" target="_blank" title="GitHub">🐙</a>
+                        <a href="https://github.com/anshisinghh/Flix" class="project-button" target="_blank" title="GitHub">🐙</a>
                     </section>
                     <ul>
                         <li>Utilized Swift along with various public APIs (including Twitter API, TMDB API, and a Parse Server on Back4app) to develop three distinct apps resembling Twitter, Instagram, and a movie browsing platform.</li>
@@ -38,8 +45,14 @@
                 </article>
                 <article class="project">
                     <h3>Would You Rather - Social Media App</h3>
-                    <section class="project-buttons">
-                        <a href="https://github.com/WouldYouRatherApp/WouldYouRatherApp" class="project-button" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <!-- WITH JS -->
+                    <section class="project-buttons-js">
+                        <a href="https://github.com/WouldYouRatherApp/WouldYouRatherApp" class="project-button" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </section>
+                    <!-- WITHOUT JS -->
+                    <section class="project-buttons-no-js" style="display: none">
+                        <a href="https://github.com/WouldYouRatherApp/WouldYouRatherApp" class="project-button" target="_blank" title="GitHub">🐙</a>
+                        <a href="https://www.youtube.com/embed/h9dNF2-z7DE?si=RH9ySSLfdb-t_yGC" class="project-button" target="_blank" title="App Walkthrough">🎥</a>
                     </section>
                     <ul>
                         <li>Used Swift to develop an original app where users can create and interact with would you rather questions.</li>
@@ -47,20 +60,45 @@
                         <li>Utilized Figma to create front-end designs, including wireframes and the app logo, enhancing overall user experience.</li>
                         <li>Employed Git for project management to delegate tasks, create plans and frameworks - ensuring efficient collaboration.</li>
                     </ul>
-                    <iframe class="center-video" height="315" src="https://www.youtube.com/embed/h9dNF2-z7DE?si=RH9ySSLfdb-t_yGC" title="App Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="iframe-container" class="center-video" height="315" src="https://www.youtube.com/embed/h9dNF2-z7DE?si=RH9ySSLfdb-t_yGC" title="App Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </article>
                 <article class="project">
                     <h3>Car Search App</h3>
-                    <section class="project-buttons">
-                        <a href="https://github.com/anshisinghh/Car-Search" class="project-button" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <!-- WITH JS -->
+                    <section class="project-buttons-js">
+                        <a href="https://github.com/anshisinghh/Car-Search" class="project-button" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </section>
+                    <!-- WITHOUT JS -->
+                    <section class="project-buttons-no-js" style="display: none">
+                        <a href="https://github.com/anshisinghh/Car-Search" class="project-button" target="_blank" title="GitHub">🐙</a>
+                        <a href="https://www.youtube.com/watch?v=h9dNF2-z7DE" class="project-button" target="_blank" title="App Walkthrough">🎥</a>
                     </section>
                     <ul>
                         <li>Collaborated in a hackathon to develop a program that matches user requirements with the best available car for sale.</li>
                         <li>Utilized the vehicle listings API by AutoDev to effectively design and enhance the process.</li>
                     </ul>
-                    <iframe class="center-video" height="315" src="https://www.youtube.com/embed/UWfbDvBuqMw?si=3OzedNz3WswOuBPV" title="App Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="iframe-container" class="center-video" height="315" src="https://www.youtube.com/embed/UWfbDvBuqMw?si=3OzedNz3WswOuBPV" title="App Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </article>
             </section>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    document.querySelector('.project-buttons-no-js').style.display = 'none';
+                    document.querySelector('.project-buttons-js').style.display = 'flex';
+                });
+            </script>
+            <noscript>
+                <style>
+                    .project-buttons-no-js {
+                        display: flex !important;
+                    }
+                    .project-buttons-js {
+                        display: none !important;
+                    }
+                    .iframe-container {
+                        display: none !important;
+                    }
+                </style>
+            </noscript>
         </main>
         <footer>
             <button class="dark-light-toggle" style="display: none;"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
