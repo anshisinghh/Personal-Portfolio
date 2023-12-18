@@ -55,6 +55,16 @@ footer p {
     text-align: center;
     font-size: 1.5em;
     margin: 0;
+    background-color: var(--light-content-background-color, green);
+    color: var(--button-text-color, white);
+    border-radius: 10%;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 0.2em;
+    cursor: pointer;
+}
+.dark-light-toggle:hover {
+    background-color: var(--dark-background-color);
 }
 @keyframes colorChange {
     50% {
@@ -240,6 +250,7 @@ nav a:hover {
 	border: 1px solid var(--dark-border-color, black);
     transition: background-color 0.3s ease;
     font-size: 0.75em;
+    cursor: pointer;
 }
 #get-in-touch-container button:hover {
     background-color: var(--dark-background-color);
