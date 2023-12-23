@@ -34,6 +34,9 @@ h3 {
 p, ul, ul li, ol li {
     font-size: var(--text-size);
 }
+.current-page {
+    text-decoration: underline;
+}
 footer {
     clear: both;
     background-color: var(--dark-background-color, green); 
