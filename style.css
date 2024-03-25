@@ -412,6 +412,9 @@ output {
     background-color: var(--dark-content-background-color, black);
     color: var(--light-text-color, beige);
 }
+.tabbed {
+    margin-left: 1em;
+}
 
 /* Certification */
 .certification-heading {
