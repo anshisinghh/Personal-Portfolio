@@ -219,12 +219,18 @@ nav a:hover {
 }
 @media (max-width: 767px) {
     .contact-buttons {
-        margin-left: 1em;
+        margin-left: 0em;
         margin-right: 1em;
         justify-content: center;
     }
     .contact-button {
         margin: 0;
+    }
+    .contact-buttons-js, .contact-buttons-no-js {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        max-right: 0;
     }
 }
 
